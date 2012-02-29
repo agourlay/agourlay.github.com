@@ -11,7 +11,7 @@ body {
 
 html,body { height:100%; }
 
-.main{
+#main{
     width: 65%;
 	margin-left: auto;
 	margin-right: auto;
