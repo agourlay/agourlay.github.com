@@ -1,4 +1,7 @@
-html,body { height:100%; }
+html,body { 
+    height:100%;
+    background: #2369aa url('../img/grey-bg.png') repeat-x left top;
+    }
 
 #main{
     width: 50%;
