@@ -1,4 +1,4 @@
-body{ 
+{ 
     stripes : [ 
     {
         color: '#3a83d6',
@@ -20,7 +20,7 @@ html,body { height:100%; }
     height: 50%;
 	margin-left: auto;
 	margin-right: auto;
-    margin-up: auto;
+    margin-top: auto;
     margin-bottom: auto;
 	background: white;
 	height: 100%;
