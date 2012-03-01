@@ -4,6 +4,8 @@ html,body {
     
 body { 
     background: url('../img/grey-bg.png') repeat-x left top;
+    margin: 0; 
+    text-align: center;
     }
 
 #main{
