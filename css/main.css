@@ -6,11 +6,11 @@ html,body {
 #main{
     width: 50%;
     height: 50%;
-	margin-left: auto;
-	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-	background: white;
+    background: white;
 }
 
 
