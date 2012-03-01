@@ -1,18 +1,3 @@
-{ 
-    stripes : [ 
-    {
-        color: '#3a83d6',
-        rotation: 180,
-        opacity: 50,
-        mode: 'normal',
-        width: 29,
-        gap: 10,
-        offset: 0
-    }
-],
-bg : '#171515'
-}
-
 html,body { height:100%; }
 
 #main{
