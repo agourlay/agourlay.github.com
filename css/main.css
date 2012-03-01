@@ -1,20 +1,27 @@
-body {
-    background: #1e5799; /* Old browsers */
-    background: -moz-linear-gradient(top,  #1e5799 0%, #207cca 41%, #2989d8 50%, #7db9e8 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(41%,#207cca), color-stop(50%,#2989d8), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #1e5799 0%,#207cca 41%,#2989d8 50%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #1e5799 0%,#207cca 41%,#2989d8 50%,#7db9e8 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #1e5799 0%,#207cca 41%,#2989d8 50%,#7db9e8 100%); /* IE10+ */
-    background: linear-gradient(top,  #1e5799 0%,#207cca 41%,#2989d8 50%,#7db9e8 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+body{ 
+    stripes : [ 
+    {
+        color: '#3a83d6',
+        rotation: 180,
+        opacity: 50,
+        mode: 'normal',
+        width: 29,
+        gap: 10,
+        offset: 0
+    }
+],
+bg : '#171515'
 }
 
 html,body { height:100%; }
 
 #main{
-    width: 65%;
+    width: 50%;
+    height: 50%;
 	margin-left: auto;
 	margin-right: auto;
+    margin-up: auto;
+    margin-bottom: auto;
 	background: white;
 	height: 100%;
 }
