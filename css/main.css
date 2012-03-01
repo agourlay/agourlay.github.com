@@ -8,6 +8,10 @@ body {
     background: url('../img/grey-bg.png') repeat-x left top;
 }
 
+#global{
+   min-height: 100%;	
+}
+
 #main{
     width: 50%;
     height: 50%;
