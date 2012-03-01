@@ -1,11 +1,10 @@
 html,body { 
-    height:100%;
+    min-height:100%;
     }
     
 body { 
     background: url('../img/grey-bg.png') repeat-x left top;
     margin: 0; 
-    text-align: center;
     }
 
 #main{
