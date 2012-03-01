@@ -25,6 +25,14 @@ body {
     padding: 0 20px 0 20px;
 }
 
+#description{
+    padding: 10px;   
+}
+
+#linkbox{
+    padding: 10px;   
+}
+
 ul {
     list-style-type: none ;
     margin: 0px 0px 20px 0px ;
@@ -32,7 +40,7 @@ ul {
   
 ul li {
     display: inline ;
-    padding: 0px 3px 0px 3px ;
+    padding: 3px ;
 }
 
 
