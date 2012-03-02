@@ -35,6 +35,11 @@ body {
     text-align: center,
 }
 
+#linkbox iframe{
+  margin-left: auto;
+  margin-right: auto;   
+}
+
 #linkbox a{
     text-decoration: none;
 }
