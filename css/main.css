@@ -38,12 +38,6 @@ body {
     text-decoration: none;  
 }
 
-img:hover{
-    -moz-box-shadow: 3px 3px 4px #000;
-    -webkit-box-shadow: 3px 3px 4px #000;
-	box-shadow: 3px 3px 4px #000;
-}
-
 #linkbox ul {
     list-style-type: none ;
     text-align: center;
