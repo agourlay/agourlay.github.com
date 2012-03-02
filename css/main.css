@@ -32,9 +32,9 @@ body {
 
 #linkbox{
     padding: 10px;
+    text-align: center,
 }
 
 #linkbox a{
-    text-decoration: none;  
-    float: right;
+    text-decoration: none;
 }
