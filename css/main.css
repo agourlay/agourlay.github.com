@@ -32,7 +32,6 @@ body {
 
 #linkbox{
     padding: 10px;
-    text-align:center;
 }
 
 #linkbox a{
@@ -41,7 +40,8 @@ body {
 
 ul {
     list-style-type: none ;
-    margin: 0px 0px 20px 0px ;
+    margin-left: auto;
+    margin-right: auto;
 }
   
 ul li {
