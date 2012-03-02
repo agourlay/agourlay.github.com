@@ -44,7 +44,9 @@ body {
 }
   
 #linkbox ul li {
-    padding: 3px ;
+    display: inline;
+    padding: 3px;
+    width: 50%;
 }
 
 
