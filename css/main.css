@@ -36,4 +36,5 @@ body {
 
 #linkbox a{
     text-decoration: none;  
+    float: left;
 }
