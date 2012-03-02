@@ -37,16 +37,3 @@ body {
 #linkbox a{
     text-decoration: none;  
 }
-
-#linkbox ul {
-    list-style-type: none ;
-    text-align: center;
-}
-  
-#linkbox ul li {
-    display: inline;
-    padding: 3px;
-    width: 50%;
-}
-
-
