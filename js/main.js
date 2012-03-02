@@ -1,7 +1,7 @@
 $(function() {
-    $("#main").hide().fadeIn(2500);
+    $("#main").hide().fadeIn(3000);
     $('#main').raptorize({
     			 'enterOn' : 'timer',
-			 'delayTime' : 20000
+			 'delayTime' : 120000
 			});
 });
