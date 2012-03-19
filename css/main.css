@@ -18,7 +18,7 @@ body {
 #main{
     position: absolute;
     top: 30%;
-    right: 50%;	
+    left: 50%;	
     width: 50%;
     background: white;
     vertical-align:middle;
