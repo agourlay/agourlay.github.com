@@ -31,8 +31,7 @@ body {
 }
 
 #description a{
-    color: #4183C4;
-    text-decoration: none;   
+    color: #4183C4; 
 }
 
 #linkbox{
@@ -45,6 +44,6 @@ body {
   margin-right: auto;   
 }
 
-#linkbox a{
-    text-decoration: none;
+a{
+  text-decoration: none;
 }
