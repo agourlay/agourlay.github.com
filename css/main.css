@@ -17,9 +17,9 @@ body {
 
 #main{
     position: absolute;
-    top: 20%;
-    left: 25%;	
-    width: 50%;
+    top: 10%;
+    left: 20%;	
+    width: 60%;
     background: white;
     vertical-align:middle;
     border: 1px solid #000;
@@ -34,14 +34,37 @@ body {
     color: #4183C4; 
 }
 
-#linkbox{
-    padding: 10px;
-    text-align: center;
+ #lifestream {
+   border-radius: 7px;
+   width: 90%;
+   font-size:11px;
+   text-align: center;
+   margin-right: auto;
+   margin-left: auto;
+}
+    
+#lifestream a {
+   color: #4183C4;
+   text-decoration: none;
 }
 
-#linkbox iframe{
-  margin-left: auto;
-  margin-right: auto;   
+#lifestream a:hover {
+  color: #fff5d8;
+  text-decoration: underline;
+}
+
+#lifestream li {
+   padding: 5px 3px 5px 25px;
+   background-repeat: no-repeat;
+   list-style: none;
+}
+
+#lifestream li:hover {
+   color: #e9e9e9;
+}
+
+#lifestream .timeago {
+   opacity: .5;
 }
 
 a{
