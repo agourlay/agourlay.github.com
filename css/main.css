@@ -31,15 +31,13 @@ body {
     font-size: 25px;
     font-weight: bold;
     padding: 10px; 
-    margin-right: auto;
-    margin-left: auto;
+    text-align: center;
 }
 
 #links ul {
     margin-top: 5px;
     list-style: none;
-    margin-right: auto;
-    margin-left: auto;
+    text-align: center;
 }
 
 #links ul li { display: inline; }
