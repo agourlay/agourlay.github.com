@@ -9,8 +9,7 @@ $(function() {
 
 //ugly copy paste from doc example
 function initLifestream(){
-
-	  var count = 0,
+      var count = 0,
       list = [
         {
           service: 'stackoverflow',
@@ -47,7 +46,7 @@ function initLifestream(){
       };
 
       $("#lifestream").lifestream({
-        limit: 10,
+        limit: 100,
         list: list,
         feedloaded: function(){
           count++;
