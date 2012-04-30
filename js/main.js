@@ -5,7 +5,13 @@ $(function() {
 			 'delayTime' : 240000
 			});
     initLifestream();
+    setTimeout(showActivities, 2000);
 });
+
+function showActivities(){
+    $('#loading').hide();
+    $('#lifestream').css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0})
+}
 
 //ugly copy paste from doc example
 function initLifestream(){
