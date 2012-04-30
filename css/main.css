@@ -28,14 +28,18 @@ body {
 }
 
 #title{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
-    padding: 10px;   
+    padding: 10px; 
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #links ul {
-    margin-top: 20px;
+    margin-top: 5px;
     list-style: none;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #links ul li { display: inline; }
