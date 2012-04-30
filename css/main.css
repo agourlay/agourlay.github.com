@@ -28,15 +28,17 @@ body {
 }
 
 #title{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     padding: 10px;   
 }
 
 #links ul {
     margin-top: 20px;
-	list-style: none;
+    list-style: none;
 }
+
+#links ul li { display: inline; }
 
 #description{
     padding: 10px;   
