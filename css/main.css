@@ -27,6 +27,17 @@ body {
     padding: 0 20px 0 20px;
 }
 
+#title{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;   
+}
+
+#links ul {
+    margin-top: 20px;
+	list-style: none;
+}
+
 #description{
     padding: 10px;   
 }
