@@ -19,8 +19,9 @@ body {
 #main{
     position: absolute;
     top: 10%;
-    left: 15%;	
-    width: 70%;
+    left: 15%;
+    right: 15%;	
+    height:70%;
     background: white;
     vertical-align: middle;
     border: 1px solid #000;
@@ -53,11 +54,9 @@ body {
 }
 
 #links ul {
-    margin-top: 5px;
     list-style: none;
     text-align: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: 2px;
 }
 
 #links ul li { 
@@ -74,7 +73,7 @@ body {
 }
 
 #lifestream {
-   width: 45%;
+   width: 50%;
    float:right;
    font-size:11px; 
    margin-right: auto;
