@@ -1,17 +1,20 @@
 $(function() {
     $("#main").hide().fadeIn(3000);
-    $('#main').raptorize({
-    			 'enterOn' : 'timer',
-			 'delayTime' : 240000
-			});
     initLifestream();
     setTimeout(showActivities, 2000);
+    konami();
 });
 
 function showActivities(){
     $('#loading').hide();
     $('#lifestream').css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0})
 }
+
+function konami(){
+    $(window).konami(function(){
+  
+    }); 
+}    
 
 //ugly copy paste from doc example
 function initLifestream(){
@@ -52,7 +55,7 @@ function initLifestream(){
       };
 
       $("#lifestream").lifestream({
-        limit: 10,
+        limit: 11,
         list: list,
         feedloaded: function(){
           count++;
