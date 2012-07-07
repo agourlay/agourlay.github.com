@@ -8,19 +8,29 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    z-index: 1;
     background: url('../img/grey-bg.png') repeat left top;
     font-family: 'Open Sans', sans-serif;
 }
 
-#content{
-    min-height: 100%;	
+#container{
+    position: relative;
+    z-index: 1;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    min-height: 100%;
 }
 
-#main{
+.face {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.content{
     position: absolute;
     top: 10%;
     left: 8%;
-    right: 8%;	
+    right: 8%;  
     height:70%;
     background: white;
     vertical-align: middle;
@@ -30,22 +40,49 @@ body {
     border-radius: 15px;
 }
 
-#loading {
-      float:right;
-      width: 45%;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
+.face.front{
+      -webkit-transform: rotateX(0deg) rotateY(0deg);
+      -webkit-transform-style: preserve-3d;
+      -webkit-backface-visibility: hidden;
+
+      -moz-transform: rotateX(0deg) rotateY(0deg);
+      -moz-transform-style: preserve-3d;
+      -moz-backface-visibility: hidden;
+
+      /* -- transition is the magic sauce for animation -- */
+      -o-transition: all 1.0s ease-in-out;
+      -ms-transition: all 1.0s ease-in-out;
+      -moz-transition: all 1.0s ease-in-out;
+      -webkit-transition: all 1.0s ease-in-out;
+      transition: all 1.0s ease-in-out;
 }
 
-#loading-sign {
-      background-image: url('../img/loading.gif');
-      height: 12px;
-      width: 80px;
-      margin-left: auto;
-      margin-right: auto;
+.face.front.flip{
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
 }
 
+.face.back{
+      -webkit-transform: rotateX(0deg) rotateY(-180deg);
+      -webkit-transform-style: preserve-3d;
+      -webkit-backface-visibility: hidden;
+
+      -moz-transform: rotateX(0deg) rotateY(-180deg);
+      -moz-transform-style: preserve-3d;
+      -moz-backface-visibility: hidden;
+
+      /* -- transition is the magic sauce for animation -- */
+      -o-transition: all 1.0s ease-in-out;
+      -ms-transition: all 1.0s ease-in-out;
+      -moz-transition: all 1.0s ease-in-out;
+      -webkit-transition: all 1.0s ease-in-out;
+      transition: all 1.0s ease-in-out;
+}
+
+.face.back.flip{
+      -webkit-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+}
 
 #title{
     font-size: 25px;
@@ -63,22 +100,12 @@ body {
   display: inline;
 }
 
-#description{
-    width: 45%;
-    float: left; 
-}
-
 #description a{
     color: #4183C4;
 }
 
 #lifestream {
-   width: 50%;
-   float:right;
    font-size:11px; 
-   margin-right: auto;
-   margin-left: auto;
-   visibility: hidden;
 }
     
 #lifestream a {

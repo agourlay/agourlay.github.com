@@ -1,14 +1,11 @@
 $(function() {
-    $("#main").hide().fadeIn(3000);
+    $(".content").hide().fadeIn(1000);
+    $('.content').mouseleave(function(){
+       $('.face').toggleClass('flip');
+      });
     initLifestream();
-    setTimeout(showActivities, 2000);
     konami();
 });
-
-function showActivities(){
-    $('#loading').hide();
-    $('#lifestream').css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0})
-}
 
 function konami(){
     $(window).konami(function(){
@@ -55,7 +52,7 @@ function initLifestream(){
       };
 
       $("#lifestream").lifestream({
-        limit: 11,
+        limit: 14,
         list: list,
         feedloaded: function(){
           count++;
