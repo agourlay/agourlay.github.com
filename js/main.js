@@ -4,14 +4,7 @@ $(function() {
        $('.face').toggleClass('flip');
       });
     initLifestream();
-    konami();
 });
-
-function konami(){
-    $(window).konami(function(){
-  
-    }); 
-}    
 
 //ugly copy paste from doc example
 function initLifestream(){
@@ -66,6 +59,5 @@ function initLifestream(){
             $("#lifestream .timeago").timeago();
           }
         }
-      });
-      
+      }); 
   }
