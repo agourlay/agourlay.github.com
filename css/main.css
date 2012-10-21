@@ -16,9 +16,23 @@ body {
 #container{
     position: relative;
     z-index: 1;
-    -webkit-perspective: 1000;
-    -moz-perspective: 1000;
     min-height: 100%;
+
+   -webkit-transition-property: all 1.0s ease-in-out;
+   -webkit-perspective: 1000px; 
+   -webkit-transform-style: preserve-3d; 
+
+   -moz-transition-property: all 1.0s ease-in-out; 
+   -moz-perspective: 1000px; 
+   -moz-transform-style: preserve-3d; 
+
+   -o-transition-property: all 1.0s ease-in-out;
+   -o-perspective: 1000px; 
+   -o-transform-style: preserve-3d; 
+
+   transition-property: all 1.0s ease-in-out;
+   perspective: 1000px;
+   transform-style: preserve-3d;
 }
 
 .face {
@@ -42,19 +56,10 @@ body {
 
 .face.front{
       -webkit-transform: rotateX(0deg) rotateY(0deg);
-      -webkit-transform-style: preserve-3d;
       -webkit-backface-visibility: hidden;
 
       -moz-transform: rotateX(0deg) rotateY(0deg);
-      -moz-transform-style: preserve-3d;
       -moz-backface-visibility: hidden;
-
-      /* -- transition is the magic sauce for animation -- */
-      -o-transition: all 1.0s ease-in-out;
-      -ms-transition: all 1.0s ease-in-out;
-      -moz-transition: all 1.0s ease-in-out;
-      -webkit-transition: all 1.0s ease-in-out;
-      transition: all 1.0s ease-in-out;
 }
 
 .face.front.flip{
@@ -70,13 +75,6 @@ body {
       -moz-transform: rotateX(0deg) rotateY(-180deg);
       -moz-transform-style: preserve-3d;
       -moz-backface-visibility: hidden;
-
-      /* -- transition is the magic sauce for animation -- */
-      -o-transition: all 1.0s ease-in-out;
-      -ms-transition: all 1.0s ease-in-out;
-      -moz-transition: all 1.0s ease-in-out;
-      -webkit-transition: all 1.0s ease-in-out;
-      transition: all 1.0s ease-in-out;
 }
 
 .face.back.flip{
