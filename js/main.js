@@ -20,7 +20,7 @@ function initLifestream(){
         },
         {
           service: 'github',
-          user: 'shagaan'
+          user: 'agourlay'
         }
       ];
 
