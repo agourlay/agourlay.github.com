@@ -1,97 +1,35 @@
 html {
-height:100%;
+min-height:100%;
 width:100%;
-overflow:hidden;
 }
 
 body {
-margin:0;
-padding:0;
-height:100%;
-z-index:1;
-background:url(../img/grey-bg.png) repeat left top;
-font-family:'Open Sans', sans-serif;
-}
-
-#container {
-position:relative;
-z-index:1;
--webkit-perspective:1000;
--moz-perspective:1000;
 min-height:100%;
+font-family:'Open Sans', sans-serif;
+z-index:1;
+background:url(../images/furley_bg.png) repeat left top;
 }
 
-.face {
--webkit-backface-visibility:hidden;
-backface-visibility:hidden;
+#container-fluid {
+min-height:100%;
+padding:20px;
 }
 
-.content {
-position:absolute;
-top:10%;
-left:8%;
-right:8%;
-height:70%;
-background:#FFF;
-vertical-align:middle;
-border:1px solid #000;
-padding:30px;
--moz-border-radius:15px;
-border-radius:15px;
+#sidebar {
+position: fixed;
+min-height: 100%;
 }
 
-.face.front {
--webkit-transform:rotateX(0deg) rotateY(0deg);
--webkit-transform-style:preserve-3d;
--webkit-backface-visibility:hidden;
--moz-transform:rotateX(0deg) rotateY(0deg);
--moz-transform-style:preserve-3d;
--moz-backface-visibility:hidden;
--o-transition:all 1s ease-in-out;
--ms-transition:all 1s ease-in-out;
--moz-transition:all 1s ease-in-out;
--webkit-transition:all 1s ease-in-out;
-transition:all 1s ease-in-out;
+#lifestream {
+display:block;
 }
 
-.face.front.flip {
--webkit-transform:rotateY(180deg);
--moz-transform:rotateY(180deg);
+#filter {
+float: right;
 }
 
-.face.back {
--webkit-transform:rotateX(0deg) rotateY(-180deg);
--webkit-transform-style:preserve-3d;
--webkit-backface-visibility:hidden;
--moz-transform:rotateX(0deg) rotateY(-180deg);
--moz-transform-style:preserve-3d;
--moz-backface-visibility:hidden;
--o-transition:all 1s ease-in-out;
--ms-transition:all 1s ease-in-out;
--moz-transition:all 1s ease-in-out;
--webkit-transition:all 1s ease-in-out;
-transition:all 1s ease-in-out;
-}
-
-.face.back.flip {
--webkit-transform:rotateY(0deg);
--moz-transform:rotateY(0deg);
-}
-
-#title {
-font-size:25px;
-font-weight:700;
-text-align:center;
-}
-
-#links ul {
-list-style:none;
-text-align:center;
-padding:2px;
-}
-
-#links ul li {
-display:inline;
+#description {
+margin-top: 20;
 }
 
 #description a {
