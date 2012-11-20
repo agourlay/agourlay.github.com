@@ -20,6 +20,22 @@ position: fixed;
 min-height: 100%;
 }
 
+.links a{
+text-decoration:none;	
+}
+
+.links img:hover {
+-webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+ }
+
+#avatar:hover{
+-webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
 #lifestream {
 display:block;
 }
