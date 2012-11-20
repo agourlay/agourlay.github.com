@@ -7,7 +7,6 @@ body {
 min-height:100%;
 font-family:'Open Sans', sans-serif;
 z-index:1;
-background:url(../images/furley_bg.png) repeat left top;
 }
 
 #container-fluid {
