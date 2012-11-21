@@ -1,5 +1,14 @@
 $(function() {
+  $('.needTooltip').tooltip({
+    placement : "bottom"
+  });
+
   var service_names = initLifestream();
+
+  $('#filter').typeahead({
+    source : service_names
+  });
+
   initFilter(service_names);
 });
 
@@ -34,7 +43,7 @@ function initLifestream() {
     };
 
     $("#lifestream").lifestream({
-      limit: 100,
+      limit: 40,
       list: list,
       feedloaded: function() {
         count++;

@@ -14,16 +14,25 @@ min-height:100%;
 padding:20px;
 }
 
-#sidebar {
-position: fixed;
-min-height: 100%;
+#title{
+text-align: center
 }
 
-.links a{
-text-decoration:none;	
+#links a{
+text-decoration:none;
 }
 
-.links img:hover {
+#links ul{
+text-align: center;
+}
+
+#links li {
+display: inline-block;
+list-style:none;
+margin: auto;
+}
+
+#links img:hover {
 -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
@@ -41,10 +50,6 @@ display:block;
 
 #filter {
 float: right;
-}
-
-#description {
-margin-top: 20;
 }
 
 #description a {
