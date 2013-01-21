@@ -63,7 +63,7 @@ function initLifestream() {
 
 function initFilter(service_names) {
 
-  $("#filter").live("keyup", function(ev) {
+  $("#filter").on("keyup", function(ev) {
     var $filter = $(this),
       keyCode = ev.keyCode || ev.which,
       search;
