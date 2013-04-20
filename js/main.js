@@ -43,7 +43,7 @@ function initLifestream() {
     };
 
     $("#lifestream").lifestream({
-      limit: 40,
+      limit: 20,
       list: list,
       feedloaded: function() {
         count++;
