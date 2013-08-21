@@ -8,12 +8,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
         <link rel="stylesheet" href="vendor/css/lifestream.css"/>
-        <link rel="stylesheet" href="vendor/css/cosmo.bootstrap.min.css"/>
+        <link rel="stylesheet" href="vendor/css/flatly.bootstrap.min.css"/>
         <link rel="stylesheet" href="css/main.css"/>
     
         <script src="vendor/js/jquery.min.js"></script>
         <script src="vendor/js/lodash.min.js"></script>
         <script src="vendor/js/jquery.timeago.min.js"></script>
+        <script src="vendor/js/jquery.tmpl.min.js"></script>
         <script src="vendor/js/jquery.lifestream.min.js"></script>
         <script src="vendor/js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
@@ -38,12 +39,12 @@
                     <div class="span12">
                         <div id="title">
                             <h3>Arnaud Gourlay</h3>
-                            <h4>Full-Stack Developer playing with Scala & Javascript.</h4>
-                            <h4>Paris, France</h4>
-                            <h4><a href="http://careers.stackoverflow.com/agourlay" target="_blank">CV</a></h4>
+                            <h5>Passionate software engineer</h5>
+                            <h5>Berlin / Paris</h5>
+                            <h5><a href="http://careers.stackoverflow.com/agourlay" target="_blank">CV</a></h5>
                         </div>
                         <div id="links">
-                            <ul>
+                            <ul class="inline">
                                 <li>
                                     <a href="https://github.com/agourlay" target="_blank" class="needTooltip" title="coding">
                                         <img height="30" width="30" src='images/fc-webicon-github.png' alt="github"/>
@@ -52,6 +53,11 @@
                                 <li>
                                     <a href="https://twitter.com/#!/ArnaudGourlay" target="_blank" class="needTooltip"  title="tweeting">
                                         <img height="30" width="30" src='images/fc-webicon-twitter.png' alt="twitter" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://fridge.arnaud-gourlay.info" target="_blank" class="needTooltip" title="side project">
+                                        <img height="22" width="22" src='images/fridge-link.png' alt="fridge"/>
                                     </a>
                                 </li>
                                 <li>
@@ -70,15 +76,20 @@
                     <div id='description' class="span12">
                         <br/>
                         <p>
-                            I am a passionate full-stack web engineer who likes to work with open source technologies.
+                            <b>I like :</b> 
+                            <ul>
+                                <li>solving problems using recent open source technologies</li>
+                                <li>working on both server side and client side</li>
+                                <li>working with adapted tools</li>
+                            </ul>
                         </p>
-    
+                    
                         <p>
-                            Currently, I am really interested in functional programming with Scala and JavaScript MVC frameworks.
+                            Check out my never ending side project <a href="http://fridge.arnaud-gourlay.info" target="_blank">Post on my fridge</a> which solves the last problem Humanity is facing, i.e. sharing sticky notes in real time on virtual fridges.
                         </p>
-    
-                        <p>
-                            Check out my never ending side project <a href="http://fridge.arnaud-gourlay.info" target="_blank">Post on my fridge</a> and leave me a message <i class="icon-thumbs-up"></i>
+
+                        <p>     
+                            This project is my sandbox and I am having a lot of fun learning through it. The backend is written in Scala using Akka actor's model and Spray for the rest interface and the frontend makes heavy use of Ember.js.
                         </p>
                     </div>
                 </section>
