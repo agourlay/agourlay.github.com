@@ -3,13 +3,7 @@ $(function() {
     placement : "bottom"
   });
 
-  var service_names = initLifestream();
-
-  $('#filter').typeahead({
-    source : service_names
-  });
-
-  initFilter(service_names);
+  initLifestream();
 });
 
 function initLifestream() {
@@ -27,8 +21,6 @@ function initLifestream() {
         service: 'lastfm',
         user: 'shagaan'
       }];
-
-    var service_names = _.pluck(list, 'service');
 
     Date.prototype.toISO8601 = function(date) {
       var pad = function(amount, width) {
@@ -58,36 +50,4 @@ function initLifestream() {
         }
       }
     });
-    return service_names;
-}
-
-function initFilter(service_names) {
-
-  $("#filter").on("keyup", function(ev) {
-    var $filter = $(this),
-      keyCode = ev.keyCode || ev.which,
-      search;
-
-    if(keyCode === 27) { //ESC
-      $filter.val("");
-    }
-
-    search = $(this).val();
-    $("#lifestream").find("li").each(function() {
-      var $li = $(this);
-      if(search === "") {
-        $li.show();
-      } else {
-        if(_.contains(service_names, search)) {
-          $li.toggle($li.hasClass("lifestream-" + search));
-        } else {
-          if($li.text().search(search) > 0) {
-            $li.show();
-          } else {
-            $li.hide();
-          }
-        }
-      }
-    });
-  });
 }

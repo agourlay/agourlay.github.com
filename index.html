@@ -33,47 +33,38 @@
         </script>
     </head>
     <body>
-        <div id='container-fluid'>
-            <div class="row-fluid">
-                <section class="span10 offset1 hero-unit">
-                    <div class="span12">
+        <hr>
+        <div id='container'>
+            <div class="row">
+                <section class="col-md-10 col-md-offset-1 jumbotron">
+                    <div class="col-md-12">
                         <div id="title">
                             <h3>Arnaud Gourlay</h3>
                             <h5>Passionate software engineer</h5>
                             <h5>arnaud.gourlay@gmail.com</h5>
                             <h5><a href="http://careers.stackoverflow.com/agourlay" target="_blank">CV</a></h5>
                         </div>
+                    </div>    
+                    <div class="col-md-12">   
                         <div id="links">
-                            <ul class="inline">
-                                <li>
-                                    <a href="https://github.com/agourlay" target="_blank" class="needTooltip" title="coding">
-                                        <img height="30" width="30" src='images/fc-webicon-github.png' alt="github"/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/#!/ArnaudGourlay" target="_blank" class="needTooltip"  title="tweeting">
-                                        <img height="30" width="30" src='images/fc-webicon-twitter.png' alt="twitter" />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://fridge.arnaud-gourlay.info" target="_blank" class="needTooltip" title="side project">
-                                        <img height="22" width="22" src='images/fridge-link.png' alt="fridge"/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://stackoverflow.com/users/1097599/arnaud-gourlay" target="_blank" class="needTooltip" title="stackoverflow">
-                                        <img height="30" width="30" src='images/fc-webicon-stackoverflow.png' alt="stackoverflow"/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://www.lastfm.com/user/shagaan" target="_blank" class="needTooltip" title="so heavy metal">
-                                        <img height="30" width="30" src='images/fc-webicon-lastfm.png' alt="lastfm"/>
-                                    </a>
-                                </li>
-                            </ul>
+                            <a href="https://github.com/agourlay" target="_blank" class="needTooltip" title="coding">
+                                <img height="30" width="30" src='images/fc-webicon-github.png' alt="github"/>
+                            </a>
+                            <a href="https://twitter.com/#!/ArnaudGourlay" target="_blank" class="needTooltip"  title="tweeting">
+                                <img height="30" width="30" src='images/fc-webicon-twitter.png' alt="twitter" />
+                            </a>
+                            <a href="http://fridge.arnaud-gourlay.info" target="_blank" class="needTooltip" title="side project">
+                                <img height="30" width="25" src='images/fridge-link.png' alt="fridge"/>
+                            </a>
+                            <a href="http://stackoverflow.com/users/1097599/arnaud-gourlay" target="_blank" class="needTooltip" title="stackoverflow">
+                                <img height="30" width="30" src='images/fc-webicon-stackoverflow.png' alt="stackoverflow"/>
+                            </a>
+                            <a href="http://www.lastfm.com/user/shagaan" target="_blank" class="needTooltip" title="so heavy metal">
+                                <img height="30" width="30" src='images/fc-webicon-lastfm.png' alt="lastfm"/>
+                            </a>
                         </div>
                     </div>
-                    <div id='description' class="span12">
+                    <div id='description' class="col-md-12">
                         <br/>
                         <p>
                             <b>I like :</b> 
@@ -83,34 +74,39 @@
                                 <li>working with adapted tools</li>
                             </ul>
                         </p>
-                    
+
                         <p>
                             Check out my never ending side project <a href="http://fridge.arnaud-gourlay.info" target="_blank">Post on my fridge</a> which solves the last problem Humanity is facing, i.e. sharing sticky notes in real time on virtual fridges.
                         </p>
 
                         <p>     
-                            This project is my sandbox and I am having a lot of fun learning through it. The backend is written in Scala using Akka & Spray and the frontend uses Ember.js.
+                            This project is my sandbox and I am having a lot of fun learning through it. The backend uses 
+                            <a href="http://spray.io/" target="_blank">Spray</a> & <a href="http://akka.io/" target="_blank">Akka</a> and the frontend uses <a href="http://emberjs.com/" target="_blank">Ember.js</a>.
                         </p>
                     </div>
                 </section>
             </div>
-            <div class="row-fluid">
-                <section class="span10 offset1">
-                    <div class="accordion" id="feedAccordion">
-                        <div class="accordion-group">
-                            <div class="accordion-heading">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#feedAccordion" href="#collapseOne">Collapsible online feeds</a>
-                            </div>
-                            <div id="collapseOne" class="accordion-body collapse">
-                                <div class="accordion-inner">
-                                    <input type="search" placeholder="Filter the feeds" name="filter" id="filter" maxlength="20" size="20"/>
+            <div class="row">
+                <section class="col-md-10 col-md-offset-1">
+                    <div class="panel-group" id="feedAccordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#feedAccordion" href="#collapseOne">
+                                        Recent online feeds
+                                    </a>
+                                 </h4>
+                            </div>    
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">
                                     <div id='lifestream' class="well well-large"></div>
                                 </div>
                             </div>
-                        </div>
+                        </div>         
                     </div>
                 </section>
             </div>
-        </div>    
+        </div>
+        <hr>    
     </body>
 </html>

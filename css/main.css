@@ -1,6 +1,5 @@
 html {
 min-height:100%;
-width:100%;
 }
 
 body {
@@ -17,13 +16,13 @@ padding:20px;
 text-align: center
 }
 
-#links a{
-text-decoration:none;
-}
-
-#links ul{
+#links{
 text-align: center;
 margin-left: 0;
+}
+
+#links a{
+text-decoration:none;
 }
 
 #links img:hover {
@@ -42,8 +41,8 @@ box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 display:block;
 }
 
-#filter {
-float: right;
+#description {
+font-size: 16px;
 }
 
 #description a {
@@ -65,11 +64,11 @@ text-decoration:underline;
 }
 
 #lifestream ul {
-padding:0;
+padding:20px;
 }
 
 #lifestream li {
-padding:5px 3px 5px 25px;
+padding:0px 3px 20px 25px;
 background-repeat:no-repeat;
 list-style:none;
 }
