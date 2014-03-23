@@ -1,12 +1,13 @@
-html {
-min-height:100%;
-}
-
 body {
 min-height:100%;
-z-index:1;
 background-image:url('../images/stardust.png');
 background-repeat:repeat;
+}
+
+.center-v{
+ transform: translate(0, 50%) !important;
+-ms-transform: translate(0, 50%) !important; /* IE 9 */
+-webkit-transform: translate(0, 50%) !important; /* Safari and Chrome */
 }
 
 #title{
