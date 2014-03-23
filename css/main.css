@@ -5,11 +5,8 @@ min-height:100%;
 body {
 min-height:100%;
 z-index:1;
-}
-
-#container-fluid {
-min-height:100%;
-padding:20px;
+background-image:url('../images/stardust.png');
+background-repeat:repeat;
 }
 
 #title{
@@ -47,34 +44,6 @@ font-size: 16px;
 
 #description a {
 color:#4183C4;
-}
-
-#lifestream {
-font-size:11px;
-}
-
-#lifestream a {
-color:#4183C4;
-text-decoration:none;
-}
-
-#lifestream a:hover {
-color:#FA7507;
-text-decoration:underline;
-}
-
-#lifestream ul {
-padding:20px;
-}
-
-#lifestream li {
-padding:0px 3px 20px 25px;
-background-repeat:no-repeat;
-list-style:none;
-}
-
-#lifestream .timeago {
-opacity:.5;
 }
 
 a {

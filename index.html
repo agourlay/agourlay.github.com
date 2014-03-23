@@ -6,15 +6,11 @@
         <meta name="keywords" content="Arnaud Gourlay, software engineer, scala">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <link rel="stylesheet" href="vendor/css/lifestream.css"/>
+
         <link rel="stylesheet" href="vendor/css/flatly.bootstrap.min.css"/>
         <link rel="stylesheet" href="css/main.css"/>
     
         <script src="vendor/js/jquery.min.js"></script>
-        <script src="vendor/js/jquery.timeago.min.js"></script>
-        <script src="vendor/js/jquery.tmpl.min.js"></script>
-        <script src="vendor/js/jquery.lifestream.min.js"></script>
         <script src="vendor/js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
     
@@ -32,15 +28,16 @@
         </script>
     </head>
     <body>
-        <hr>
-        <div id='container'>
-            <section class="col-md-8 col-md-offset-2 jumbotron">
+        <div class='container'>
+            <section class="col-md-8 col-md-offset-2 jumbotron center-v">
                 <div class="col-md-12">
                     <div id="title">
                         <h3>Arnaud Gourlay</h3>
-                        <h5>Passionate software engineer</h5>
+                        <h4>
+                            <a href="http://careers.stackoverflow.com/agourlay" target="_blank" class="needTooltip" title="resume">
+                            Software engineer</a>
+                        </h4>
                         <h5>arnaud.gourlay@gmail.com</h5>
-                        <h5><a href="http://careers.stackoverflow.com/agourlay" target="_blank">CV</a></h5>
                     </div>
                 </div>    
                 <div class="col-md-12">   
@@ -61,34 +58,15 @@
                 </div>
                 <div id='description' class="col-md-12">
                     <br/>
-                        My current topics of interest are mostly <a href="http://www.scala-lang.org/" target="_blank">Scala</a> & <a href="http://akka.io/" target="_blank">Akka</a> to build awesome reactive backend and a bit of javascript on top with <a href="http://emberjs.com/" target="_blank">Ember.js</a> for the client side.
-                    <br/>
-                    <br/>
-                        I am playing with all those technologies building cool open source side projects: 
+                        Have a look at some of my open source side projects: 
+                        <br/>
+                        <br/>
                         <ul>
-                          <li><a href="https://github.com/agourlay/omnibus" target="_blank">Omnibus</a> : an HTTP-friendly reactive message bus </li>
-                          <li><a href="https://github.com/agourlay/post-on-my-fridge" target="_blank">Post on my fridge</a> : a fun content platform with virtual fridges</li>
+                          <li><a href="https://github.com/agourlay/omnibus" target="_blank">Omnibus</a> : an HTTP-friendly persistent message bus built with Akka. </li>
+                          <li><a href="https://github.com/agourlay/post-on-my-fridge" target="_blank">Post on my fridge</a> : a fun content platform with virtual fridges built with Ember.js</li>
                         </ul>
                 </div>
             </section>
-            <section class="col-md-8 col-md-offset-2">
-                <div class="panel-group" id="feedAccordion">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#feedAccordion" href="#collapseOne">
-                                    Recent online feeds
-                                </a>
-                             </h4>
-                        </div>    
-                        <div id="collapseOne" class="panel-collapse collapse in">
-                            <div class="panel-body">
-                                <div id='lifestream' class="well well-large"></div>
-                            </div>
-                        </div>
-                    </div>         
-                </div>
-            </section>         
         </div>
     </body>
 </html>
