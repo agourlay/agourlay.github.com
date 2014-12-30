@@ -37,8 +37,8 @@ transform: translate(0, 40%) !important;
 border-radius: 8px;
 background-color: #f4f4f4;
 vertical-align: center;
-padding-top: 40px;
-padding-bottom: 40px;
+padding-top: 9px;
+padding-bottom: 9px;
 margin-left: 25%;
 }
 
@@ -53,10 +53,11 @@ text-align: center
 #links{
 text-align: center;
 padding-top: 20px;
+padding-bottom: 20px;
 }
 
 #links img:hover {
--webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
--moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
