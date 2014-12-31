@@ -15,6 +15,7 @@ font-weight: 500;
 
 h4{
 font-weight: 400;
+margin-bottom: 5px;
 }
 
 h5{
@@ -28,9 +29,9 @@ color: #d9230f;
 }
 
 .center-v{
-transform: translate(0, 40%) !important;
--ms-transform: translate(0, 40%) !important; /* IE 9 */
--webkit-transform: translate(0, 40%) !important; /* Safari and Chrome */
+transform: translate(0, 50%) !important;
+-ms-transform: translate(0, 50%) !important; /* IE 9 */
+-webkit-transform: translate(0, 50%) !important; /* Safari and Chrome */
 }
 
 #box{
@@ -46,13 +47,13 @@ margin-left: 25%;
 border-radius: 8px;
 }
 
-#title{
+.text-align-center {
 text-align: center
 }
 
 #links{
 text-align: center;
-padding-top: 20px;
+padding-top: 15px;
 padding-bottom: 20px;
 }
 

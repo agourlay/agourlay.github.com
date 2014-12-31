@@ -2,41 +2,45 @@
 <html lang="en">
     <head>
         <title>Arnaud Gourlay</title>
+
         <meta name="description" content="Arnaud Gourlay, software engineer.">
         <meta name="keywords" content="Arnaud Gourlay, software engineer">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
+
         <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans' type='text/css'>
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
         <link rel="stylesheet" href="css/main.css"/>
-        <script>    
-             var _gaq = _gaq || [];
-              _gaq.push(['_setAccount', 'UA-29659444-1']);
-              _gaq.push(['_setSiteSpeedSampleRate', 100]);
-              _gaq.push(['_trackPageview']);
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-29659444-1']);
+            _gaq.push(['_setSiteSpeedSampleRate', 100]);
+            _gaq.push(['_trackPageview']);
     
-              (function() {
+            (function() {
                 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-              })();
+            })();
+        </script>
+        <script>    
+            $(function() {
+                $('#box').delay(300).css({'opacity':0}).animate({ 'opacity': 1 }, 700);
+            });
         </script>
     </head>
     <body>
         <div class="pure-g">
             <section id="box" class="pure-u-1-2 center-v">
-                <div class="pure-u-1">
-                    <div id="title">
-                        <h3>Arnaud Gourlay</h3>
-                        <img id="face" src="images/face.jpg" width="100" height="100">
-                        <h4>Slightly opinionated software engineer</h4>
-                        <h5>
-                            Currently Scala hacker <a href="http://www.commercetools.com/en/" target="_blank">@Commercetools</a>
-                        </h5>
-                        <h5>
-                            Previous <a href="http://careers.stackoverflow.com/agourlay" target="_blank">experiences</a>
-                        </h5>
-                    </div>
+                <div class="pure-u-1 text-align-center">
+                    <h3>Arnaud Gourlay</h3>
+                    <img id="face" src="images/face.jpg" width="100" height="100">
+                    <h4><i>Slightly opinionated software engineer</i></h4>
+                    <h5>
+                        <a href="http://careers.stackoverflow.com/agourlay" target="_blank">careers.stackoverflow</a>
+                    </h5>
                 </div>    
                 <div class="pure-u-1">   
                     <div id="links">
