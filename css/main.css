@@ -1,5 +1,5 @@
-body {
-min-height:100%;
+html, body {
+height:100%;
 background-image:url('../images/bg.png');
 background-repeat:repeat;
 font-family: 'Open Sans', sans-serif;
@@ -29,18 +29,25 @@ color: #d9230f;
 }
 
 .center-v{
-transform: translate(0, 50%) !important;
--ms-transform: translate(0, 50%) !important; /* IE 9 */
--webkit-transform: translate(0, 50%) !important; /* Safari and Chrome */
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+}
+
+#parent {
+height: 100%;
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+transform-style: preserve-3d;
 }
 
 #box{
 border-radius: 8px;
 background-color: #f4f4f4;
-vertical-align: center;
 padding-top: 9px;
 padding-bottom: 9px;
 margin-left: 25%;
+height: 300px;
 }
 
 #face{
